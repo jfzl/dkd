@@ -2,11 +2,12 @@
 
 name: Github cfz
 on:
+    workflow_dispatch:
     push:
         branches:
             - main
     schedule:
-        - cron: '1 * * * *'
+        - cron: '10 * * * *'
 jobs:
     build:
         runs-on: ubuntu-latest
